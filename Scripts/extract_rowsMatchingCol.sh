@@ -8,5 +8,5 @@
 ### and file 2 is b 
 
 
- awk 'FILENAME == "A" { remember[$1 $2]=1 ;}
- FILENAME != "A" { if ( $1 $2 in remember ) print ; } ' A b
+ awk 'FILENAME == "A" { remember[$1]=1 ;}
+ FILENAME != "A" { if ( $1 in remember ) print ; } ' A b
