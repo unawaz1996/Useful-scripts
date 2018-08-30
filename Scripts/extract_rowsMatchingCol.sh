@@ -9,4 +9,4 @@
 
 
  awk 'FILENAME == "A" { remember[$1]=1 ;}
- FILENAME != "A" { if ( $1 in remember ) print ; } ' A b
+ FILENAME != "A" { if ( $1 in remember ) print ; } ' A b > output.txt
